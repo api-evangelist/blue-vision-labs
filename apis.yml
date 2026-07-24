@@ -1,24 +1,72 @@
 aid: blue-vision-labs
-name: Blue Vision Labs *
-description: 'Blue Vision Labs * is a company surfaced as a portfolio company of gv and added to the API
-  Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+name: Blue Vision Labs
+description: 'Blue Vision Labs was a London-based computer-vision company that built the first city-scale
+  augmented reality cloud — crowdsourcing centimetre-accurate 3D maps of entire cities from images captured
+  by car-mounted smartphone cameras, then letting developers use visual positioning to place shared and
+  persistent AR content that every device sees in the same real-world spot. It emerged from stealth in
+  March 2018 with a $14.5M round led by GV, alongside Accel and Horizons Ventures, and offered invite-only
+  early access to iOS and Android SDKs covering San Francisco, New York City and London. Lyft acquired the
+  company in October 2018 and made it the UK hub of its Level 5 self-driving division. The developer
+  platform is retired: bluevisionlabs.com no longer resolves to a web host, the documentation and SDK
+  downloads are offline, and no public API surface remains.'
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://avatars.githubusercontent.com/u/19323859?v=4
 url: https://raw.githubusercontent.com/api-evangelist/blue-vision-labs/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - gv
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-platform-retired
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Frontier Tech
+- Augmented Reality
+- Computer Vision
+- Mapping
+- Localization
+- Spatial Computing
+- Acquired
+- Retired
 apis: []
+common:
+- name: GitHub Organization
+  description: The Blue Vision Labs GitHub organization. Live, but publishes zero public repositories.
+  type: GitHubOrganization
+  url: https://github.com/bluevisionlabs
+- name: Lifecycle
+  description: Timeline, product status and sunset record for the Blue Vision AR Cloud and its SDKs.
+  type: Lifecycle
+  url: lifecycle/blue-vision-labs-lifecycle.yml
+- name: Domain Security
+  description: DNS, mail and transport-security probe of bluevisionlabs.com.
+  type: DomainSecurity
+  url: security/blue-vision-labs-domain-security.yml
+- name: LLMs.txt
+  description: Agent-facing summary of what Blue Vision Labs was and why there is nothing to integrate
+    with.
+  type: LLMsTxt
+  url: llms/blue-vision-labs-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

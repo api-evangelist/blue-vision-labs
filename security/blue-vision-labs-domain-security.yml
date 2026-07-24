@@ -1,0 +1,59 @@
+generated: '2026-07-20'
+method: probed
+source: dig + curl probe of bluevisionlabs.com on 2026-07-20
+name: Blue Vision Labs Domain Security
+description: >-
+  DNS and transport-security posture for bluevisionlabs.com. The domain is still
+  registered and still carries Google Workspace mail records, but it publishes no
+  A/AAAA record, so there is no reachable web or API surface. Probed values below
+  are recorded verbatim; absence of a record is real data, not a gap in probing.
+domains:
+- domain: bluevisionlabs.com
+  resolves: false
+  https_reachable: false
+  http_status: null
+  notes: >-
+    No A or AAAA record. curl to https://bluevisionlabs.com/ and
+    https://www.bluevisionlabs.com/ both fail to connect (exit before HTTP).
+  nameservers:
+  - ns-153.awsdns-19.com.
+  - ns-568.awsdns-07.net.
+  - ns-1396.awsdns-46.org.
+  - ns-1562.awsdns-03.co.uk.
+  dns:
+    a: []
+    aaaa: []
+    ns_present: true
+    dnssec: false
+    ds_records: []
+    caa: []
+    mx:
+    - 1 aspmx.l.google.com.
+    - 5 alt1.aspmx.l.google.com.
+    - 5 alt2.aspmx.l.google.com.
+    - 10 alt3.aspmx.l.google.com.
+    - 10 alt4.aspmx.l.google.com.
+    spf: v=spf1 include:_spf.google.com ~all
+    dmarc: null
+  tls:
+    probed: false
+    reason: host does not resolve
+  hsts:
+    probed: false
+    reason: host does not resolve
+findings:
+- id: no-web-surface
+  severity: informational
+  detail: Domain has no A/AAAA record; the former developer portal and documentation are offline.
+- id: dnssec-absent
+  severity: low
+  detail: No DS records published for bluevisionlabs.com.
+- id: caa-absent
+  severity: low
+  detail: No CAA records restrict certificate issuance for bluevisionlabs.com.
+- id: dmarc-absent
+  severity: medium
+  detail: No _dmarc.bluevisionlabs.com TXT record, while MX still routes mail to Google Workspace.
+- id: spf-present
+  severity: informational
+  detail: SPF published as a soft-fail (~all) allowing Google Workspace senders.

@@ -1,0 +1,61 @@
+# Blue Vision Labs
+
+> Blue Vision Labs built the first city-scale augmented reality cloud — a shared,
+> persistent AR platform where multiple devices see the same virtual content in the
+> same real-world place. It was acquired by Lyft in October 2018 and folded into
+> Lyft's Level 5 self-driving division as its UK hub. **The developer platform is
+> retired and no public API, SDK, or documentation surface remains online.**
+
+generated: 2026-07-20
+method: generated
+source: apis.yml + lifecycle/blue-vision-labs-lifecycle.yml + archived bluevisionlabs.com (2019-07-16 snapshot)
+
+## Status
+
+- Company status: acquired / absorbed (Lyft, October 2018)
+- Platform status: retired
+- Website: bluevisionlabs.com — domain still registered, no A/AAAA record, does not serve
+- Developer portal / documentation: offline
+- Public API: none
+- Public SDK artifacts: none found on npm, PyPI, Maven Central, NuGet, pkg.go.dev, RubyGems, Packagist or crates.io
+- GitHub organization: https://github.com/bluevisionlabs (live, zero public repositories)
+
+## What the platform was
+
+Blue Vision Labs crowdsourced highly detailed 3D maps of entire cities using images
+captured from car-mounted smartphone cameras, achieving centimetre-level positioning
+without GPS or traditional maps. Developers used an SDK to perform visual positioning
+against that map and to place and retrieve persistent AR content.
+
+Documented capability areas (from the archived product site):
+
+- Navigation — AR wayfinding with virtual instructions anchored in the street
+- Social — shared experiences where every participant sees the same content
+- Gaming — collaborative AR games with many simultaneous users
+- Exploration — persistent digital annotations on physical places
+- Transportation — live AR location sharing to find a ride on a busy street
+- Retail — product and promotion highlighting in-store
+
+## Historical developer surface (no longer available)
+
+- Authentication: API key, issued through an invite-only early access program
+- iOS SDK 1.0.0 — Swift, iOS 11+
+- Android SDK 1.0.0 — Unity (C#), Android 7.0+
+- Map coverage: San Francisco, New York City, London
+
+## For agents
+
+There is nothing to integrate with. Do not attempt to call bluevisionlabs.com
+endpoints, request API keys, or install a Blue Vision SDK — none of these resolve.
+Third-party packages named `bluevision` (PyPI) and `@bluevision/*` (npm) are
+unrelated projects and are NOT first-party Blue Vision Labs software.
+
+If you are looking for the successor to this technology, it lives inside Lyft
+(https://www.lyft.com/) and is not exposed as a public API.
+
+## Artifacts in this profile
+
+- apis.yml — API Evangelist company profile
+- lifecycle/blue-vision-labs-lifecycle.yml — full timeline, product status, sunset record
+- security/blue-vision-labs-domain-security.yml — DNS/TLS probe of bluevisionlabs.com
+- llms/blue-vision-labs-llms.txt — this file

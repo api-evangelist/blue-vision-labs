@@ -1,0 +1,71 @@
+generated: '2026-07-20'
+method: searched
+source: https://medium.com/@bluevisionlabs/blue-vision-labs-is-joining-lyft-657daca89b71
+name: Blue Vision Labs Lifecycle
+description: >-
+  Lifecycle record for the Blue Vision Labs AR Cloud platform and its iOS/Android
+  SDKs. The company was acquired by Lyft in October 2018 and folded into Lyft's
+  Level 5 self-driving division as its UK hub. The developer platform was never
+  taken to general availability — it ran as an invite-only early access program —
+  and the public surface has since been retired.
+status: retired
+lifecycle_stage: sunset
+availability: none
+timeline:
+- date: '2016-05'
+  event: Company founded; GitHub organization github.com/bluevisionlabs created 2016-05-12.
+- date: '2018-03-15'
+  event: Emerged from stealth with a $14.5M round led by GV, alongside Accel and Horizons Ventures.
+  source: https://techcrunch.com/2018/03/15/blue-vision-labs-which-builds-collaborative-ar-emerges-from-stealth-with-14-5m-led-by-gv/
+- date: '2018'
+  event: >-
+    AR Cloud developer platform offered via early-access sign-up, with iOS SDK 1.0.0
+    (Swift, iOS 11+) and Android SDK 1.0.0 (Unity/C#, Android 7.0+), plus API-key
+    based authentication. Coverage limited to San Francisco, New York City and London.
+  source: https://web.archive.org/web/20190716042341/https://bluevisionlabs.com/
+- date: '2018-10-23'
+  event: >-
+    Lyft announced acquisition of Blue Vision Labs (reported ~$72M plus up to $30M
+    in milestone earn-out). Team, technology and product acquired; became Lyft
+    Level 5's UK hub.
+  source: https://techcrunch.com/2018/10/23/lyft-is-buying-london-ar-startup-blue-vision-labs-to-fuel-its-autonomous-car-efforts/
+- date: '2026-07-20'
+  event: >-
+    Probed by the API Evangelist enrichment pipeline — bluevisionlabs.com no longer
+    resolves to a web host; developer portal, documentation and SDK downloads are
+    offline. GitHub organization survives with zero public repositories.
+products:
+- name: Blue Vision AR Cloud
+  status: retired
+  notes: City-scale shared and persistent AR platform built on crowdsourced 3D maps and visual positioning.
+- name: Blue Vision iOS SDK
+  version: 1.0.0
+  status: retired
+  notes: Swift, iOS 11+. Distributed through the early access program; no public registry artifact found.
+- name: Blue Vision Android SDK
+  version: 1.0.0
+  status: retired
+  notes: Unity (C#), Android 7.0+. Distributed through the early access program; no public registry artifact found.
+versioning:
+  policy_published: false
+  scheme: unknown
+deprecation:
+  policy_published: false
+  sunset_header: false
+  notes: No RFC 8594 Sunset/Deprecation policy was ever published; the platform was retired with the acquisition.
+status_page:
+  published: false
+sla:
+  published: false
+successor:
+  organization: Lyft
+  url: https://www.lyft.com/
+  notes: >-
+    Technology absorbed into Lyft Level 5. Lyft does not publish a successor public
+    API for the AR Cloud; no migration path exists for former early-access developers.
+verification:
+  probed: '2026-07-20'
+  website_http_status: null
+  website_note: bluevisionlabs.com and www.bluevisionlabs.com fail to resolve (no A/AAAA record)
+  github_org_http_status: 200
+  github_public_repos: 0
