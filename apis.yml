@@ -9,6 +9,17 @@ description: 'Blue Vision Labs was a London-based computer-vision company that b
   company in October 2018 and made it the UK hub of its Level 5 self-driving division. The developer
   platform is retired: bluevisionlabs.com no longer resolves to a web host, the documentation and SDK
   downloads are offline, and no public API surface remains.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: approval
