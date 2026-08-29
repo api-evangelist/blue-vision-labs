@@ -33,6 +33,9 @@ accessModel:
   method: derived
 image: https://avatars.githubusercontent.com/u/19323859?v=4
 url: https://raw.githubusercontent.com/api-evangelist/blue-vision-labs/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "The developer platform is retired: bluevisionlabs.com no longer resolves to a web host, the documentation and SDK downloads are offline, and no public API surface remains."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
